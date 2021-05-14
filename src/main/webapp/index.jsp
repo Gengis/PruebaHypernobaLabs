@@ -66,59 +66,48 @@
         </form>
    
     
-	<center>
-
-
-            
-            <table>
-                <thead>
-               
-                <th align="center">CONCEPTO</th>
-                <th align="center">DESDE</th>
-                <th align="center">HASTA</th>
-                <th align="center">NOMBRE</th>
-                <th align="center">POSICION</th>
-                <th align="center">DEPARTAMENTO</th>
-                <th align="center">SUPERVISOR</th>
-                <th align="center">FECHA</th>
-                <th align="center">CUENTA</th>
-                <th align="center">DESCRIPCION</th>
-                <th align="center">TOTAL</th>
-                <th align="center">MONTO FINAL</th>
-                <th align="center">APROBADO POR</th>
-                
-
-                </thead>
-                <tbody>
-
-
-                    <%
-                       //ResultSet rss = objusu.Listar();
-                       while (rs.next()) {
-                    %>
-                    <tr class="fila">
-                        
-                        <td> <%= rs.getString(2)%></td>
-                        <td> <%= rs.getString(3)%></td>
-                        <td> <%= rs.getString(4)%></td>
-                        <td> <%= rs.getString(5)%></td>
-                        <td> <%= rs.getString(6)%></td>
-                        <td> <%= rs.getString(7)%></td>
-                        <td> <%= rs.getString(8)%></td>
-                        <td> <%= rs.getString(9)%></td>
-                        <td> <%= rs.getString(10)%></td>
-                        <td> <%= rs.getString(11)%></td>
-                        <td> <%= rs.getString(12)%></td>
-                        <td> <%= rs.getString(13)%></td>
-                        <td> <%= rs.getString(14)%></td>
-                        
-                    </tr>
-                    <%
-                                }
-                    %>
-                </tbody>
-            </table>
-        </center>
+<center>
+	<table>
+		<thead>              
+			<th align="center">CONCEPTO</th>
+			<th align="center">DESDE</th>
+			<th align="center">HASTA</th>
+			<th align="center">NOMBRE</th>
+			<th align="center">POSICION</th>
+			<th align="center">DEPARTAMENTO</th>
+			<th align="center">SUPERVISOR</th>
+			<th align="center">FECHA</th>
+			<th align="center">CUENTA</th>
+			<th align="center">DESCRIPCION</th>
+			<th align="center">TOTAL</th>
+			<th align="center">MONTO FINAL</th>
+			<th align="center">APROBADO POR</th>
+         </thead>
+         <tbody>
+         <%
+          while (rs.next()) {
+          %>
+			<tr class="fila">
+				<td> <%= rs.getString(2)%></td>
+				<td> <%= rs.getString(3)%></td>
+				<td> <%= rs.getString(4)%></td>
+				<td> <%= rs.getString(5)%></td>
+				<td> <%= rs.getString(6)%></td>
+				<td> <%= rs.getString(7)%></td>
+				<td> <%= rs.getString(8)%></td>
+				<td> <%= rs.getString(9)%></td>
+				<td> <%= rs.getString(10)%></td>
+				<td> <%= rs.getString(11)%></td>
+				<td> <%= rs.getString(12)%></td>
+				<td> <%= rs.getString(13)%></td>
+				<td> <%= rs.getString(14)%></td>
+			</tr>
+		<%
+		}
+		%>
+		</tbody>
+	</table>
+</center>
 	
 </body>
 </html>
